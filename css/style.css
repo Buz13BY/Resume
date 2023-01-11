@@ -45,6 +45,7 @@ body {
 	overflow: hidden;
 }
 .section {
+	position: relative;
 	padding: 0px 10px;
 }
 .container {
@@ -94,6 +95,13 @@ body {
 	font-weight: 700;
 	opacity: 0.7;
 }
+.about__item a{
+	color:rgba(0, 0, 0);
+	transition: all 0.7s ease;
+}
+.about__item a:hover{
+	color:  rgb(49, 65, 109);
+}
 .about__item_subtitle {
 	font-weight: 500;
 	font-size: 18px;
@@ -102,6 +110,7 @@ body {
 .about__item_text {
 	font-weight: 400;
 	line-height: 112%;
+	text-align: justify;
 }
 .button {
 	display: inline-block;
@@ -122,9 +131,6 @@ body {
 .button:hover {
 	background-color: rgb(73, 96, 160);
 	transform: translateY(-2px);
-}
-.about a {
-	color:#fff;
 }
 .contacts {
 	max-width: 48%;
@@ -172,8 +178,10 @@ body {
 	font-weight: 500;
 }
 .footer {
+	position: absolute;
+	bottom: 0;
 	background-color: aliceblue;
-	max-width: 100%;
+	width: 100%;
 	padding: 20px 10px;
 	margin: 0 auto;
 	border-radius: 15px 15px 0 0;
