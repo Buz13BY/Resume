@@ -178,7 +178,8 @@ body {
 	font-weight: 500;
 }
 .footer {
-	position: absolute;
+	position:sticky;
+	left: 0;
 	bottom: 0;
 	background-color: aliceblue;
 	width: 100%;
